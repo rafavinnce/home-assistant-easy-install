@@ -1,0 +1,14 @@
+# This file is part of the Home Assistant role.
+#
+# Copyright (c) 2023 Rafael Milani Barbosa <rafaelmilanib@gmail.com>
+#
+# Licensed under Apache 2.0. All rights reserved.
+#
+---
+- name: distribute the /etc/motd file
+  template:
+    src: motd.j2
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: 0644

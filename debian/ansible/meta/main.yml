@@ -1,0 +1,25 @@
+# This file is part of the Home Assistant role.
+#
+# Copyright (c) 2023 Rafael Milani Barbosa <rafaelmilanib@gmail.com>
+#
+# Licensed under Apache 2.0. All rights reserved.
+#
+---
+galaxy_info:
+  author: Rafael Milani Barbosa
+  description: Role for the deployment of Home Assistant
+  company: Home Assistant
+  license: Apache 2.0
+  min_ansible_version: 2.0
+  platforms:
+    - name: Fedora
+      versions:
+        - 30
+        - 31
+        - 32
+    - name: Debian
+      versions:
+        - bullseye
+  categories:
+    - system
+    - home-automation

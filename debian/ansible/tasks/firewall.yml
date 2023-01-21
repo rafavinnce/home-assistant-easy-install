@@ -1,0 +1,25 @@
+# This file is part of the Home Assistant role.
+#
+# Copyright (c) 2023 Rafael Milani Barbosa <rafaelmilanib@gmail.com>
+#
+# Licensed under Apache 2.0. All rights reserved.
+#
+---
+- service:
+    name: firewalld
+    state: started
+
+- name: open port for home assistant
+  firewalld:
+    port: "{{ ha_port }}/tcp"
+    permanent: true
+    state: enabled
+    immediate: yes
+
+- name: open port for mqtt
+  firewalld:
+    port: 1883/tcp
+    permanent: true
+    state: enabled
+    immediate: yes
+

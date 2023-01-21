@@ -1,0 +1,15 @@
+# This file is part of the Home Assistant role.
+#
+# Copyright (c) 2023 Rafael Milani Barbosa <rafaelmilanib@gmail.com>
+#
+# Licensed under Apache 2.0. All rights reserved.
+#
+---
+# The location of the config directory
+ha_conf_dir: /opt/home-assistant
+# The default user
+ha_user: ha
+# The default port
+ha_port: 8123
+# modify motd
+motd_modification: false
